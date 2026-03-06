@@ -1,0 +1,27 @@
+<! DOCTYPE HTML>
+<HTML lang=“es”>
+<HEAD> 
+<TITLE> p&aacute;gina 3 </TITLE> 
+    <META HTTP-EQUIV="Refresh" CONTENT="10"> </META>
+<HEAD>
+<BODY>
+<video src="video_1.mp4" id=aa width="60%" autoplay="true" controls>
+</video>
+<br>
+<br>
+    <BUTTON onclick="velocidad(0)" type="button">pause</BUTTON>
+    <BUTTON onclick="velocidad(1)" type="button">play</BUTTON>
+    <BUTTON onclick="velocidad(0.5)" type="button">x 1/2</BUTTON>
+    <BUTTON onclick="velocidad(2)" type="button">x 2</BUTTON>
+    <BUTTON onclick="velocidad(4)" type="button">x 4</BUTTON>
+<script>
+    var video=document.getElementById('aa');
+    
+function velocidad(v)
+{
+   video.playbackRate=v;  
+}
+</script>
+    
+</BODY>
+    </HTML>
